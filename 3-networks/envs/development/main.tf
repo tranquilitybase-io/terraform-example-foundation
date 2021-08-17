@@ -53,8 +53,8 @@ locals {
   restricted_hub_subnet_ranges    = ["10.214.32.0/24", "10.214.160.0/24"]
   restricted_private_service_cidr = "10.214.104.0/21"
   restricted_subnet_primary_ranges = {
-    (var.default_region1) = "10.214.32.0/24"
-    (var.default_region2) = "10.214.160.0/19"
+    (var.default_region1) = "10.214.40.0/21"
+    (var.default_region2) = "10.214.168.0/21"
   }
   restricted_subnet_secondary_ranges = {
     (var.default_region1) = [
