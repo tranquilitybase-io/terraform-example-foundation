@@ -22,15 +22,15 @@ locals {
    * Base network ranges
    */
   base_subnet_primary_ranges = {
-    (var.default_region1) = "10.0.0.0/24"
-    (var.default_region2) = "10.1.0.0/24"
+    (var.default_region1) = "10.210.0.0/24"
+    (var.default_region2) = "10.210.64.0/24"
   }
   /*
    * Restricted network ranges
    */
   restricted_subnet_primary_ranges = {
-    (var.default_region1) = "10.8.0.0/24"
-    (var.default_region2) = "10.9.0.0/24"
+    (var.default_region1) = "10.211.0.0/24"
+    (var.default_region2) = "10.211.64.0/24"
   }
 }
 
